@@ -1,11 +1,9 @@
 package com.preoday.test.mars.temperature.test;
 
 import com.preoday.test.mars.temperature.auxiliar.ConvertTemperatures;
-import com.preoday.test.mars.temperature.service.NasaApiService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
