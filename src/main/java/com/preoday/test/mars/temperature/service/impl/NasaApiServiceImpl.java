@@ -1,5 +1,6 @@
 package com.preoday.test.mars.temperature.service.impl;
 
+import com.preoday.test.mars.temperature.auxiliar.ConvertTemperatures;
 import com.preoday.test.mars.temperature.auxiliar.JsonReader;
 import com.preoday.test.mars.temperature.service.NasaApiService;
 import org.json.JSONArray;
@@ -47,7 +48,7 @@ public class NasaApiServiceImpl implements NasaApiService {
             throw new RuntimeException("SOL not found.");
         }
 
-        return averageTemperature;
+        return ConvertTemperatures.celsiusToFahrenheit(averageTemperature);
     }
 
     private JSONObject connectNasaAPI() throws IOException {
@@ -59,5 +60,4 @@ public class NasaApiServiceImpl implements NasaApiService {
 
         return JsonReader.readJsonFromUrl(targetUrl);
     }
-
 }
