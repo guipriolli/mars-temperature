@@ -1,13 +1,10 @@
 ## Mars Temperature 
 Preoday Java developer test using NASA’s Mars Weather api.
-</br></br>
 
 ### Frameworks and Libraries
 
 - Spring Boot is an open source Java-based framework used to create an auto configurable production-grade Spring application.
 - JSON-Java or org.json is a simple Java based toolkit for JSON.
-
-</br></br>
 
 ### Build and Deploy the Project
 
@@ -23,10 +20,7 @@ And, you can deploy it by using the main class: `MarsTemperatureApplication.java
 java -jar preoday-mars-temperature-1.0-SNAPSHOT.jar MarsTemperatureApplications.java
 ```
 
-Once deployed, you can simply access the app at: 
-
-http://localhost:8080
-</br></br>
+Once deployed, you can simply access the app at: http://localhost:8080
 
 ### Endpoints
 
